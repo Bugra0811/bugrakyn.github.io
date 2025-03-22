@@ -1,93 +1,119 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styling */
+/* Genel Stil */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Açık mavi arka plan */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styling */
+/* Başlık ve Navbar */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+    background-color: #0288d1; /* Mavi arka plan */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin: 0;
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/* Navigation styling */
 nav {
-  background-color: #444;
+    margin-top: 10px;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-  margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+    background: white;
+    color: #0288d1; /* Mavi renk */
 }
 
-/* Main content styling */
-main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
+/* Bölümler */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+section:hover {
+    transform: translateY(-5px);
 }
 
-/* Footer styling */
+section h2 {
+    color: #0277bd; /* Daha koyu mavi başlık */
+    border-bottom: 2px solid #0288d1; /* Mavi alt çizgi */
+    padding-bottom: 5px;
+}
+
+/* Homework Listesi */
+#homework ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#homework ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#homework ul li a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0288d1; /* Mavi arka plan */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#homework ul li a:hover {
+    background: #0277bd; /* Daha koyu mavi */
+}
+
+/* İletişim */
+#contact p a {
+    color: #0288d1; /* Mavi bağlantı */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact p a:hover {
+    color: #0277bd; /* Daha koyu mavi */
+}
+
+/* Footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  main {
-    padding: 15px;
-  }
+    background-color: #0277bd; /* Koyu mavi arka plan */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
